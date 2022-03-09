@@ -202,14 +202,14 @@ func TaskFive() {
 }
 
 func main() {
-	//fmt.Println("firstTask is starting...")
-	//TaskOne()
+	fmt.Println("firstTask is starting...")
+	TaskOne()
 	fmt.Println("secondTask is starting...")
 	TaskTwo()
 	fmt.Println("thirdTask is starting...")
 	TaskThree()
 	fmt.Println("forthTask is starting...")
 	TaskFour()
-	//fmt.Println("fifthTask is starting...")
-	//TaskFive()
+	fmt.Println("fifthTask is starting...")
+	TaskFive()
 }
