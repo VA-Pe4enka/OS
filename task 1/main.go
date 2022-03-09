@@ -88,7 +88,16 @@ func TaskTwo() {
 	_ = ioutil.WriteFile(fileName, data, 0777)
 	tmpl, _ := ioutil.ReadFile(fileName)
 	fmt.Println(string(tmpl))
-	removeFile(fileName)
+	fmt.Println("Do you want delete file? 0 - no; 1 - yes")
+	var delete string
+	fmt.Scanf("%s\n", &delete)
+	if delete == "1" {
+		removeFile(fileName)
+	}
+	if delete == "2" {
+		fmt.Println("File is not deleted!")
+	}
+
 }
 
 func TaskThree() {
